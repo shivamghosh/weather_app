@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{title}
+        style
+            include ../public/style.css
+        link(rel = "icon" href = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReBzM-ypO8hHfXiQKMXoLoz6Xb6sXUBWJfrQ&usqp=CAU" type = "image/x-icon")
+    body 
+        .container1
+            h1 Weather App
+        .container2
+            //- - var url = #{image}
+            img(src=image, alt="Image not found")
+            //- p #{image}
+            p.para This is a weather app. Please enter the city to know about the weather details.
+            //- .container3
+            form(action='/' method="post" class="container4") 
+                input(type="text" placeholder="Enter city" name="city")
+                button Submit
+                .box 
+                    p.inbox #{text00}
+                    p.inbox #{text0}
+                    p.inbox #{text1}
+                    p.inbox #{text2}
+                    p.inbox #{text3}
+                    p.inbox #{text4}
+                    p.inbox #{text5}
+                    p.inbox #{text6}
+        footer &copy Weather App
